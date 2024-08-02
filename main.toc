@@ -1,3 +1,0 @@
-\beamer@sectionintoc {2}{Overview of Intuitionistic Linear Logic}{4}{0}{1}
-\beamer@sectionintoc {3}{Base-extension Semantics for ILL}{26}{0}{2}
-\beamer@sectionintoc {4}{Including the exponential}{55}{0}{3}
