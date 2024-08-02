@@ -13,7 +13,7 @@
 \useinnertheme{blockborder}
 
 \graphicspath{{./images/} }
-\title[P-tS for ILL]{Base-extension semantics for Intuitionistic Linear Logic}
+\title[B-eS for ILL]{Base-extension Semantics for Intuitionistic Linear Logic}
 %\author{\texorpdfstring{Yll Buzoku\newline\url{y.buzoku@ucl.ac.uk}}{https://www.homepages.ucl.ac.uk/~zcapybu/}}
 \author{Yll Buzoku}
 \institute[UCL]{%
@@ -42,7 +42,7 @@
 \begin{frame}{Goals for this talk}
 \begin{itemize}%[label={-}]
 \item To introduce Intuitionistic Linear Logic and a natural deduction system for it.
-\item Present a Base-extension semantics for Intuitionistic Linear Logic.
+\item Present a Base-extension Semantics for Intuitionistic Linear Logic.
 \item Talk about some of the difficulties involved the process of developing such a semantics.
 \end{itemize}
 \end{frame}
@@ -925,7 +925,7 @@ Then $\at{C}_{1}\msetsum\ldots\msetsum\at{C}_{n}\deriveBaseM{\baseB} r$.
 			%
 			\vspace{1cm}
 			%
-			\item[(Inf)] For $\Gamma=\bang\Delta\msetsum\Theta$ being a nonempty multiset, $\Gamma \suppM{\baseB}{L}\varphi$ iff for all $\baseC \baseGeq \baseB$, atomic multisets $\at{K}$, if $\suppM{\baseC}{\at{K}}\Theta$ and $\suppM{\baseC}{\emptymultiset}\Delta$ then $\suppM{\baseC}{L,K}\varphi$.
+			\item[(Inf)] $\bang\Delta\msetsum\Theta \suppM{\baseB}{L}\varphi$ iff for all $\baseC \baseGeq \baseB$, atomic multisets $\at{K}$, if $\suppM{\baseC}{\at{K}}\Theta$ and $\suppM{\baseC}{\emptymultiset}\Delta$ then $\suppM{\baseC}{L,K}\varphi$.
 		\end{itemize}
 	\end{center}
 \end{frame}
@@ -977,14 +977,12 @@ Then $\at{C}_{1}\msetsum\ldots\msetsum\at{C}_{n}\deriveBaseM{\baseB} r$.
 	\pause
 	\item Examples of such bases:
 	\begin{itemize}
-		\item $\baseB = \{ (\Rightarrow p)\}$
-		\item $\baseB = \{(\Rightarrow q),\, (q\Rightarrow p) \}$
+		\item $\baseB = \{\Rightarrow p\}$
+		\item $\baseB = \{\Rightarrow q,\, \openaddrule\Rightarrow q\closeaddrule\Rightarrow p\}$
 		%\item $\baseB = \{\at{r},\, \}$ and $\at{L}=\[\at{r}\]$
 	\end{itemize}
-	\pause
-	\end{itemize} 
+	\end{itemize}
 	\vspace{10pt}
-	Note that if $\at{L}$ were non-empty then all of the atoms in $L$ would have to be derivable purely from $\baseB$.
 	\end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1031,11 +1029,9 @@ Then $\at{C}_{1}\msetsum\ldots\msetsum\at{C}_{n}\deriveBaseM{\baseB} r$.
 %  \end{figure}
 %\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Muchas gracias!}
+\begin{frame}
 \begin{center}
-Muchas gracias!
-
-Questions? Comments? Observations? Please ask and/or feel free to email me at \url{y.buzoku@ucl.ac.uk}.
+$\mathbf{Gracias!}$
 \end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
